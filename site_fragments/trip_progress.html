@@ -1,0 +1,62 @@
+<div id="input_col">
+<h1 id="output_stadium_text">StadiumName</h1>
+<h2>Home of the <span id="output_team_text"></span></h2>
+<h4>Souvenirs</h3>
+<table id="input_souvenir_table"><!--Select Souvenirs-->
+    <tr>
+        <th scope="col"> Item </th>
+        <th scope="col"> Price </th>
+    </tr>
+    <tr>
+        <th scope="row"> Demo Souvenir </th>
+        <td> $ 20 </th>
+    </tr>
+    <tr>
+        <th scope="row"> Another Souv </th>
+        <td> $ 23 </th>
+    </tr>
+</table>
+<input type="number" placeholder="Item Quantity" id="input_souvenir_number"><!--Select Souvenir Quantity to Purchase-->
+<p3>Subtotal: $ <span id="output_subtotal_text">#####</span></p3><!--View Purchase Cost-->
+</div>
+
+
+<br>
+<p3 id="label_distance">Distance Traveled: <span id="output_distance_current_text">#####</span> / <span id="output_distance_text">#####</span> KM</p3><!--View Current / Net Distance-->
+<br><br><br><br>
+<h4>My Receipt</h3>
+<table id="output_receipt_table"><!--Verify Destinations-->
+    <tr>
+        <th scope="col"> Team </th>
+        <th scope="col"> Stadium </th>
+    </tr>
+    <tr>
+        <th scope="row"> Demo Team </th>
+        <td> Demo Stadium </th>
+    </tr>
+    <tr>
+        <th scope="row"> 49rs </th>
+        <td> 49rs Stadium </th>
+    </tr>
+</table>
+<p3>Plan Expenses: $ <span id="output_total_text">#####</span></p3><!--View Net Cost-->
+
+<p>Proceed to <span id="output_next_stadium_text">the next stadium</span>?</p>
+<input type="button" id="input_return_button" value="Back"><!--Previous Destination-->
+<input type="button" id="input_proceed_button" value="Ok"><!--Next Destination-->
+
+<progress value="0" max="0"></progress>
+
+<script defer>
+output_stadium_text = document.querySelector("#output_stadium_text");
+output_team_text = document.querySelector("#output_team_text");
+input_souvenir_table = document.querySelector("#input_souvenir_table");
+output_subtotal_text = document.querySelector("#output_subtotal_text");
+output_distance_current_text = document.querySelector("#output_distance_current_text");
+output_distance_text = document.querySelector("#output_distance_text");
+output_receipt_table = document.querySelector("#output_receipt_table");
+output_total_text = document.querySelector("#output_total_text");
+output_next_stadium_text = document.querySelector("#output_next_stadium_text");
+input_return_button = document.querySelector("#input_return_button");
+input_proceed_button = document.querySelector("#input_proceed_button");
+</script>

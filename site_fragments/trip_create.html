@@ -1,0 +1,56 @@
+<div id="input_col">
+<h1>My Plan</h1>
+<h2>Your dream vacation starts here</h2>
+<h4>Available Teams</h3>
+<table id="input_team_table"><!--Select Destinations-->
+    <tr>
+        <th scope="col"> Team </th>
+        <th scope="col"> Stadium </th>
+    </tr>
+    <tr>
+        <th scope="row"> Demo Team </th>
+        <td> Demo Stadium </th>
+    </tr>
+    <tr>
+        <th scope="row"> 49rs </th>
+        <td> 49rs Stadium </th>
+    </tr>
+</table>
+<input type="text" list="value" placeholder="Algorithm" id="input_algorithm_combobox"><!--Select Traversal Algorithm-->
+<datalist id="value">
+    <option>Selected Order</option>
+    <option>Shortest Order</option>
+    <option>Dijkstra</option>
+</datalist>
+</div>
+
+
+<br>
+<p3 id="label_distance">Journey Distance: <span id="output_distance_text">#####</span> KM</p3><!--View Net Distance-->
+<br><br><br><br>
+<h4>Selected Teams</h3>
+<table id="output_plan_table"><!--Verify Destinations-->
+    <tr>
+        <th scope="col"> Team </th>
+        <th scope="col"> Stadium </th>
+    </tr>
+    <tr>
+        <th scope="row"> Demo Team </th>
+        <td> Demo Stadium </th>
+    </tr>
+    <tr>
+        <th scope="row"> 49rs </th>
+        <td> 49rs Stadium </th>
+    </tr>
+</table>
+
+<p>Proceed with your vacation?</p>
+<input type="button" id="input_proceed_button" value="Ok"><!--Start Trip-->
+
+<script defer>
+input_team_table = document.querySelector("#input_team_table");
+input_algorithm_combobox = document.querySelector("#input_algorithm_combobox");
+output_distance_text = document.querySelector("#output_distance_text");
+output_plan_table = document.querySelector("#output_plan_table");
+input_proceed_button = document.querySelector("#input_proceed_button");
+</script>
